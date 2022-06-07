@@ -1,0 +1,16 @@
+
+    <nb-card size="small">
+      <nb-card-header>
+        All Products
+      </nb-card-header>
+      <nb-list>
+        <nb-list-item *ngFor="let product of listProducts" (click)="goToProduct(product)">
+          <p>{{product.name}}</p>
+          <p>{{product.description}}</p>
+        </nb-list-item>
+      </nb-list>
+    </nb-card>
+
+
+
+

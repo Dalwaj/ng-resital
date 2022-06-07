@@ -1,0 +1,25 @@
+<nb-layout>
+  <nb-layout-header>
+    <div class="headerDiv">
+      <p (click)="goToSection('home')">RETISAL</p>
+      <p (click)="goToSection('products')">Products</p>
+      <p>Infrastructures</p>
+      <input type="search">
+    </div>
+  </nb-layout-header>
+  <nb-layout-column>
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+</nb-layout>
+<!--<router-outlet></router-outlet>
+<nb-card>
+  <nb-card-body>
+    <nb-route-tabset [tabs]="tabs" fullWidth></nb-route-tabset>
+  </nb-card-body>
+</nb-card>
+-->
+
+
+
+
+

@@ -1,0 +1,28 @@
+
+    <nb-card>
+      <nb-card-body>
+        <nb-list>
+          <nb-list-item>Résumé</nb-list-item>
+          <nb-list-item>Builds</nb-list-item>
+          <nb-list-item>Releases</nb-list-item>
+          <nb-list-item>Configuration</nb-list-item>
+          <nb-list-item>Journaux</nb-list-item>
+          <nb-list-item>Activité</nb-list-item>
+        </nb-list>
+      </nb-card-body>
+    </nb-card>
+    <nb-card *ngIf="product" size="small">
+      <nb-card-header>
+        <p>{{product.name}}</p>
+      </nb-card-header>
+      <nb-card-body>
+        <p>{{product.description}}</p>
+      </nb-card-body>
+    </nb-card>
+    <nb-layout-column *ngIf="!product">
+        <p>Error 404 : Product not found</p>
+        <p><a routerLink="restial/products">Go to products list</a></p>
+    </nb-layout-column>
+
+
+
